@@ -154,8 +154,8 @@ function resetscreen() {
     resetload.style.display = 'block'
     eat = document.getElementById('eating')
 
-    const bing = new Audio("bite.mp3");
-    const yay = new Audio("yay.mp3")
+    const bing = new Audio("sounds/bite.mp3");
+    const yay = new Audio("sounds/yay.mp3")
 
     setTimeout(function() {
         bing.play()
