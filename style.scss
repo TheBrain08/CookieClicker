@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(52, 73, 94);
+}
+
+#app {
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    width: 98%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 10px;
+    text-align: center;
+}
+
+#cookiearea {
+    border-radius: 25px;
+    border: rgba(165, 42, 42, 0.559) 5px solid;
+    height: 85vh;
+    #cookieimg {
+        top: 50%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+#idk {
+    border-radius: 25px;
+    border: rgba(165, 42, 42, 0.559) 5px solid;
+    height: 85vh;
+    #resetarea {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        button {
+            margin: 0 auto;
+            display: block;
+            padding: 1em 4rem;
+            color: red;
+            background-color: rgba(255, 0, 0, 0.267);
+            border: 2px solid grey;
+            border-radius: 20px;
+        }
+    }
+    #question {
+        position: relative;
+        margin: 0 auto;
+        background-color: black;
+        height: 140px;
+        width: 400px;
+        color: white;
+        display: none;
+        border: 2px solid grey;
+        border-radius: 20px;
+        left: -30%;
+        button {
+            margin-top: 10px;
+        }
+    }
+}
+
+#Shop {
+    border-radius: 25px;
+    border: rgba(165, 42, 42, 0.559) 5px solid;
+    height: 85vh;
+    button {
+        background-color: black;
+        color: white;
+    }
+}
+
+#item p {
+    background-color: grey;
+    font-size: 25px;
+    border-radius: 10px;
+    border: black 2px solid;
+    height: 55px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#SpezialShop {
+    display: none;
+    border-radius: 25px;
+    border: rgba(165, 42, 42, 0.559) 5px solid;
+    height: 85vh;
+    button {
+        background-color: black;
+        color: white;
+    }
+}
+
+#Sitem p {
+    background-color: grey;
+    font-size: 25px;
+    border-radius: 10px;
+    border: black 2px solid;
+    height: 55px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#resetload {
+    display: none;
+    background: rgb(0, 0, 0) url(Bilder/loader.gif) no-repeat center center;
+    height: 101vh;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+    width: 101%;
+    position: fixed;
+    z-index: 100;
+    p {
+        font-size: 30px;
+        position: absolute;
+        left: 43%;
+        top: 15%;
+        color: red;
+        text-align: center;
+    }
+}

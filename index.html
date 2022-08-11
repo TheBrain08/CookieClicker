@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="icon" href="./Bilder/Cookie.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./main.js"></script>
+
+</head>
+
+<body>
+    <div id="resetload">
+        <p id="eating"></p>
+    </div>
+    <div id="app">
+        <div id="cookiearea">
+            <h1 id="clicks">0 Cookies</h1>
+            <img id="cookieimg" onclick="getcookies()" src="./Bilder/Cookie.png" alt="" height="300px">
+            <div onclick="getcookies()">click</div>
+        </div>
+        <div id="idk">
+            <h1>Coming soon</h1>
+            <div id="resetarea">
+                <button onclick="reset()" id="resetbutton">Reset</button>
+                <div id="question">
+                    Möchtest du dein Spielstand <b>wirklich</b> <span style="color: red;">löschen</span> ?
+
+                    <button onclick="choose('yes')">Ja</button>
+                    <button onclick="choose('no')" style="background-color: rgba(0, 255, 0, 0.267); color: lime;">Nein</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="Shop">
+                <h1>Shop</h1>
+                <button onclick="switchshop('shop')">Spezial Shop</button>
+
+                <div id="item">
+                    <p title="https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="buyone('clicker')" id="clicker">Autoclicker <br> cost: 10 </p>
+                    <p onclick="buyone('oma')" id="oma">Oma <br> cost: 60 </p>
+                </div>
+            </div>
+            <div id="SpezialShop">
+                <h1>Spezial Shop</h1>
+                <button onclick="switchshop('sshop')">Spezial Shop</button>
+
+                <div id="Sitem">
+                    <p onclick="buyone('multi')" id="multi">Klick Multiplikator x2 <br> cost: 100000 </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        load()
+    </script>
+</body>
+
+</html>
