@@ -9,6 +9,7 @@ function switchshop(shop) {
 
 }
 
+
 let cookieclicks = 0;
 let clicker = 0;
 let Omas = 0;
@@ -154,8 +155,8 @@ function resetscreen() {
     resetload.style.display = 'block'
     eat = document.getElementById('eating')
 
-    const bing = new Audio("bite.mp3");
-    const yay = new Audio("yay.mp3")
+    const bing = new Audio("sounds/bite.mp3");
+    const yay = new Audio("sounds/yay.mp3")
 
     setTimeout(function() {
         bing.play()
@@ -214,6 +215,11 @@ function choose(anwser) {
         if (typeof localStorage.getItem("multicost") !== 'undefined' && localStorage.getItem("multicost") !== null && isNaN(localStorage.getItem("multicost")) === false) {
             multicost = localStorage.setItem("multicost", 100000);
         }
+        if (typeof localStorage.getItem("reloadstorage") !== 'undefined' && localStorage.getItem("reloadstorage") !== null && isNaN(localStorage.getItem("reloadstorage")) === false) {
+            reloadstorage = localStorage.setItem("reloadstorage", 0)
+
+        }
+
         resetscreen()
     } else {
         document.getElementById('question').style.display = 'none'
@@ -253,6 +259,7 @@ function load() {
     document.getElementById('clicker').innerHTML = clicker + ' Autoclicker' + ' <br> cost: ' + Autoclickercost;
     document.getElementById('oma').innerHTML = Omas + ' Oma' + ' <br> cost: ' + Omacost;
     document.getElementById('multi').innerHTML = 'Klick Multiplikator x' + nummutli * 2 + ' <br> cost: ' + multicost;
+
     Autoclickerupdate();
     Omaupgrade();
 
